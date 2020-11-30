@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  font-family: "Playfair Display", serif;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  background: #d1698a;
+  height: 80px;
+  line-height: 80px;
+}
+.container {
+  max-width: 86%;
+  margin: auto;
+}
+.menu_a {
+  display: flex;
+  justify-content: space-between;
+}
+.nav {
+  display: flex;
+}
+.nav a {
+  font-size: 20px;
+  color: black;
+  padding: 0 15px;
+  text-transform: uppercase;
+  display: block;
+  transition: all linear 0.3s;
+}
+.nav a:hover {
+  background: #db0462;
+  color: white;
+}
+.myaccount a {
+  font-size: 35px;
+  color: black;
+}
+.drop {
+  position: relative;
+}
+
+.down {
+  top: -400px;
+  left: 20px;
+  position: absolute;
+  background: #d1698a;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: all linear 0.3s;
+}
+.drop:hover .down {
+  top: 80px;
+  visibility: visible;
+  opacity: 1;
+}
+.banner {
+  background: url(./f.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px 0;
+  color: black;
+  font-size: 20px;
+}
+.bnr_content a {
+  display: inline-block;
+  padding: 16px 30px;
+  background: #d1698a;
+  color: black;
+}
